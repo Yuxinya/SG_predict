@@ -44,7 +44,7 @@ conda create --name SG_predict python=3.6
 conda activate SG_predict
 conda install --channel conda-forge pymatgen
 pip install matminer
-pip install scikit-learn==0.23.1
+pip install scikit-learn==0.24.1
 ```
 
 ## Setup
