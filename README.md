@@ -7,7 +7,7 @@ This is a random forest machine learning model with a new feature set combined w
 
 If you find our software is useful, please cite it as:<br >
 
-#### Yuxin Li, Wenhui Yang, Rongzhi Dong, Jianjun Hu*, Crystal Systems and Space Groups Prediction of Inorganic Materials Using Machine Learning
+#### Yuxin Li, Rongzhi Dong, Wenhui Yang, Jianjun Hu*, Crystal Systems and Space Groups Prediction of Inorganic Materials Using Machine Learning
 
 Developed in 2021.4-30 at <br />
 School of Mechanical Engineering<br />
@@ -23,7 +23,7 @@ University of South Carolina, Columbia, USA<br />
 Our model of space group prediction in cubic material is trained with the dataset of 'ML/data.csv' by useing the 'ML/RF_of_us.py'
 , and the dataset used for other crystal system training can be downloaded from here [data.csv](https://figshare.com/s/9cfe81a3b087618353c8).
 
-Prediction performance in terms of accuracy score for space groups over different crystal systems （10 fold cross validation)
+Prediction performance for space groups over different crystal systems （10 fold cross validation)
 |Crystal system|data set size |   Accuracy  |     MCC     |   Precision |   Recall  |   F1 score  |
 |-------------|---------------|-------------|-------------|-------------|-----------|-------------|
 Cubic         |     17367     | 0.961±0.006 | 0.945±0.008 | 0.960±0.005 |0.961±0.006| 0.959±0.006 |
