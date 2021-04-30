@@ -24,15 +24,15 @@ Our model of space group prediction in cubic material is trained with the datase
 , and the dataset used for other crystal system training can be downloaded from here [data.csv](https://figshare.com/s/9cfe81a3b087618353c8).
 
 Prediction performance in terms of accuracy score for space groups over different crystal systems （10 fold cross validation)
-|Crystal system|data set size |   accuracy  |
-|-------------|---------------|-------------|
-Cubic         |     17367     | 0.961±0.006 |
-Hexagonal     |      8201     | 0.909±0.008 |
-Trigonal      |      9429     | 0.824±0.012 |
-Tetragonal    |     12675     | 0.849±0.013 |
-Orthorhombic  |     22392     | 0.755±0.005 |
-Monoclinic    |     23024     | 0.712±0.009 |
-Triclinic     |      9440     | 0.835±0.013 |
+|Crystal system|data set size |   Accuracy  |     MCC     |    Precis   |   Precis  |   F1 score  |
+|-------------|---------------|-------------|-------------|-------------|-----------|-------------|
+Cubic         |     17367     | 0.961±0.006 | 0.945±0.008 | 0.960±0.005 |0.961±0.006| 0.959±0.006 |
+Hexagonal     |      8201     | 0.909±0.008 | 0.888±0.010 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
+Trigonal      |      9429     | 0.824±0.012 | 0.945±0.008 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
+Tetragonal    |     12675     | 0.849±0.013 | 0.945±0.008 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
+Orthorhombic  |     22392     | 0.755±0.005 | 0.945±0.008 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
+Monoclinic    |     23024     | 0.712±0.009 | 0.945±0.008 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
+Triclinic     |      9440     | 0.835±0.013 | 0.945±0.008 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
 <!--- img src="performance1.png" width="800"--->
 
 ## Environment Setup
