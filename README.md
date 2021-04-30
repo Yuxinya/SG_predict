@@ -40,8 +40,8 @@ Triclinic     |               | 0.835±0.013 |
 To use this machine learning model, you need to create an environment with the correct dependencies. Using `Anaconda` this can be accomplished with the following commands:
 
 ```bash
-conda create --name mlatticeabc python=3.6
-conda activate mlatticeabc
+conda create --name SG_predict python=3.6
+conda activate SG_predict
 conda install --channel conda-forge pymatgen
 pip install matminer
 pip install scikit-learn==0.23.1
