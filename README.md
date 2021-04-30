@@ -26,13 +26,13 @@ Our model of space group prediction in cubic material is trained with the datase
 Prediction performance in terms of accuracy score for space groups over different crystal systems （10 fold cross validation)
 |Crystal system|data set size |   accuracy  |
 |-------------|---------------|-------------|
-Cubic         |               | 0.961±0.006 |
-Hexagonal     |               | 0.909±0.008 |
-Trigonal      |               | 0.824±0.012 |
-Tetragonal    |               | 0.849±0.013 |
-Orthorhombic  |               | 0.755±0.005 |
-Monoclinic    |               | 0.712±0.009 |
-Triclinic     |               | 0.835±0.013 |
+Cubic         |     17367     | 0.961±0.006 |
+Hexagonal     |      8201     | 0.909±0.008 |
+Trigonal      |      9429     | 0.824±0.012 |
+Tetragonal    |     12675     | 0.849±0.013 |
+Orthorhombic  |     22392     | 0.755±0.005 |
+Monoclinic    |     23024     | 0.712±0.009 |
+Triclinic     |      9440     | 0.835±0.013 |
 <!--- img src="performance1.png" width="800"--->
 
 ## Environment Setup
