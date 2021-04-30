@@ -20,8 +20,8 @@ University of South Carolina, Columbia, USA<br />
 
 ## Performance on Materials Project dataset
 
-Our models are trained with the dataset of 'data/data.csv' by useing the RF_of_us.py
-<!-- , and the dataset can be downloaded from here [data.zip](https://figshare.com/s/1411919c94be680136cd). It also includes the dataset named 'Enhanced_magpie.csv' for the baseline algorithm. -->
+Our model of space group prediction in cubic material is trained with the dataset of 'ML/data.csv' by useing the 'ML/RF_of_us.py'
+, and the dataset used for other crystal system training can be downloaded from here [data.csv](https://figshare.com/s/9cfe81a3b087618353c8).
 
 Prediction performance in terms of accuracy score for space groups over different crystal systems （10 fold cross validation)
 |Crystal system|data set size |   accuracy  |
@@ -52,29 +52,29 @@ pip install scikit-learn==0.24.1
 Once you have setup an environment with the correct dependencies you can install by the following commands:
 
 ```bash
-conda activate mlatticeabc
-git clone https://github.com/usccolumbia/SG_Prediction
-cd SG_Prediction
+conda activate SG_predict
+git clone https://github.com/Yuxinya/SG_predict
+cd SG_predict
 pip install -e .
 ```
 
-<!-- Pre-trained models are stored in google drive. Download the file `model.zip` from from the [figshare](https://figshare.com/s/d478c42bbe2e21c045b3). After downing the file, copy it to `MLatticeABC` and extract it. the `Model` folder should be in the `MLatticeABC` directory after the extraction is completed.
+Pre-trained models are stored in google drive. Download the file `model.zip` from from the [figshare](https://figshare.com/s/62da0bce61e4ff038bf7). After downing the file, copy it to `SG_predict` and extract it. the `model` folder should be in the `SG_predict` directory after the extraction is completed. If you do not do this, the model can only make claccification by providing the crystal system information.
 ## Example Use
 
-In order to test your installation you can run the following example from your `MLatticeABC` directory:
+In order to test your installation you can run the following example from your `SG_predict` directory:
 
 ```sh
-cd /path/to/MLatticeABC/
+cd /path/to/SG_predict/
 python predict.py -i full_formula -s crystal_system
 
 for example:
-python predict.py -i Mn16Zn24Ge24O96 -s cubic
-python predict.py -i Mn16Zn24Ge24O96
+python predict.py -i Zn24Si24Bi16O96 -s cubic
+python predict.py -i Zn24Si24Bi16O96
 ```
 
 The following cyrstal_system values are accepted
 ```
-crystal     # crystal system unknown.
+crystal     # crystal system unknown. 
 cubic
 hexagonal
 trigonal
@@ -83,4 +83,4 @@ orthorhombic
 monoclinic
 triclinic
 ```
- -->
+
