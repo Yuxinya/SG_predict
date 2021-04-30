@@ -22,7 +22,7 @@ University of South Carolina, Columbia, USA<br />
 
 Our model of space group prediction in cubic material is trained with the dataset of 'ML/data.csv' by useing the 'ML/RF_of_us.py'
 , and the dataset used for other crystal system training can be downloaded from here [data.csv](https://figshare.com/s/9cfe81a3b087618353c8).
-Moreover, the two previous work frameworks are put in the ML folder.
+Moreover, the two previous work frameworks for space group classification are also put in the ML folder.
 
 Prediction performance for space groups over different crystal systems （10 fold cross validation)
 |Crystal system|data set size |   Accuracy  |     MCC     |   Precision |   Recall  |   F1 score  |
