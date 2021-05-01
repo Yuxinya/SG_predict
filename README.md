@@ -100,6 +100,8 @@ The following .csv format are accepted for train and test
 |--------------|---------------|
 |Na8Al6Si6S1O28|     195       |
 |Na4Cl4O12     |      198      |
+
+
 The following .csv format are accepted for predict
 |formula       |
 |--------------|
