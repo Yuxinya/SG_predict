@@ -85,3 +85,15 @@ monoclinic
 triclinic
 ```
 
+You can also use this algorithm to train, test and predict data
+```sh
+cd /path/to/SG_predict/
+python predict.py -data the data you provideed -type train, test or predict
+
+for example:
+python model.py -data data/train.csv -type train
+python model.py -data data/test.csv -type test
+python model.py -data data/predict.csv -type predict
+```
+The following .csv format are accepted
+
