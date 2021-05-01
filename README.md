@@ -96,4 +96,7 @@ python model.py -data data/test.csv -type test
 python model.py -data data/predict.csv -type predict
 ```
 The following .csv format are accepted
-
+|formula       |space_group    |
+|--------------|---------------|
+|Na8Al6Si6S1O28|     195       |
+|Na4Cl4O12     |      198      |
