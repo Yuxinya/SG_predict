@@ -20,7 +20,7 @@ University of South Carolina, Columbia, USA<br />
 
 ## Performance on Materials Project dataset
 
-Our model of space group prediction in cubic material is trained with the dataset of 'ML/data.csv' by useing the 'ML/RF_of_us.py'
+Our model of space group prediction in cubic material is trained with the dataset of 'ML/cubic.csv' by useing the 'ML/RF_of_us.py'
 , and the dataset used for other crystal system training can be downloaded from here [data.csv](https://figshare.com/s/9cfe81a3b087618353c8).
 Moreover, the two previous work frameworks for space group classification are also put in the ML folder.
 
