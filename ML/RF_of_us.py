@@ -8,22 +8,9 @@ from sklearn.model_selection import cross_validate
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
-# x = pd.read_csv('data/data.csv').iloc[:9440,5:].fillna(0).values 
-# y = pd.read_csv('data/data.csv').iloc[:9440,1].fillna(0).values 
-# x = pd.read_csv('data/data.csv').iloc[9440:32464,5:].fillna(0).values 
-# y = pd.read_csv('data/data.csv').iloc[9440:32464,1].fillna(0).values
-# x = pd.read_csv('data/data.csv').iloc[32464:54856,5:].fillna(0).values 
-# y = pd.read_csv('data/data.csv').iloc[32464:54856,1].fillna(0).values
-# x = pd.read_csv('data/data.csv').iloc[54856:67531,5:].fillna(0).values 
-# y = pd.read_csv('data/data.csv').iloc[54856:67531,1].fillna(0).values
-# x = pd.read_csv('data/data.csv').iloc[67531:76960,5:].fillna(0).values 
-# y = pd.read_csv('data/data.csv').iloc[67531:76960,1].fillna(0).values
-# x = pd.read_csv('data/data.csv').iloc[76960:85161,5:].fillna(0).values 
-# y = pd.read_csv('data/data.csv').iloc[76960:85161,1].fillna(0).values
-
 #  cubic data are as follows
-x = pd.read_csv('data/data.csv').iloc[85161:,5:].fillna(0).values 
-y = pd.read_csv('data/data.csv').iloc[85161:,1].fillna(0).values
+x = pd.read_csv('cubic.csv').iloc[:,5:].fillna(0).values 
+y = pd.read_csv('cubic.csv').iloc[:,1].fillna(0).values
 
 p = np.random.permutation(range(len(x)))
 x,y = x[p],y[p] #Disrupt the order of data

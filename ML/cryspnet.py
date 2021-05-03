@@ -24,23 +24,9 @@ from keras.metrics import top_k_categorical_accuracy
 from keras.optimizers import RMSprop,Adam,SGD
 
 def main_K():
-
-	# X = pd.read_csv('data/one_data.csv').iloc[85161:,5:-6].fillna(0).values.astype(float)
-	# Y = pd.read_csv('data/one_data.csv').iloc[85161:,1].fillna(0).values
-	# X = pd.read_csv('data/one_data.csv').iloc[9440:32464,5:-6].fillna(0).values.astype(float)
-	# Y = pd.read_csv('data/one_data.csv').iloc[9440:32464,1].fillna(0).values
-	# X = pd.read_csv('data/one_data.csv').iloc[32464:54856,5:-6].fillna(0).values.astype(float)
-	# Y = pd.read_csv('data/one_data.csv').iloc[32464:54856,1].fillna(0).values
-	# X = pd.read_csv('data/one_data.csv').iloc[54856:67531,5:-6].fillna(0).values.astype(float) 
-	# Y = pd.read_csv('data/one_data.csv').iloc[54856:67531,1].fillna(0).values
-	# X = pd.read_csv('data/one_data.csv').iloc[67531:76960,5:-6].fillna(0).values.astype(float) 
-	# Y = pd.read_csv('data/one_data.csv').iloc[67531:76960,1].fillna(0).values
-	# X = pd.read_csv('data/one_data.csv').iloc[76960:85161,5:-6].fillna(0).values.astype(float)
-	# Y = pd.read_csv('data/one_data.csv').iloc[76960:85161,1].fillna(0).values
 	#  cubic data are as follows
-	X = pd.read_csv('data/data.csv').iloc[85161:,5:-6].fillna(0).values.astype(float)
-	Y = pd.read_csv('data/data.csv').iloc[85161:,1].fillna(0).values
-
+	X = pd.read_csv('cubic.csv').iloc[:,5:-6].fillna(0).values.astype(float)
+	Y = pd.read_csv('cubic.csv').iloc[:,1].fillna(0).values
 	# encode class values as integers
 	encoder = LabelEncoder()
 	encoded_Y = encoder.fit_transform(Y)
@@ -98,7 +84,6 @@ def NN(x_train,x_test,y_train,y_test,input_dim,output_dim):
 	res = [a,mcc,f1]
 	print(res)
 	return(res)
-
 
 
 
