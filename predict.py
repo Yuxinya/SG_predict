@@ -55,6 +55,10 @@ def decompress_pickle(file):
 def main():
 
     print('----------Predicting----------')
+    print('The descriptors we use in this model are as follows:')
+    print('Element Property statistics of Magpie: Atomic Number, Mendeleev Number, Atomic Weight, Melting Temperature, Periodic Table Row and Column, Covalent Radius, Electronegativity, The number of Valence e ineach Orbital(s, p. d, f, total), The number of unilled e ineach orbital (s, p. d, f, total), Ground State Volume, Ground State Band Gap Energy, Ground State Magnetic Moment, Space Group Number')
+    print('Additional Predictors of Magpie: Stoichiometry p-norm (p=0,2,3,5.7), Elemental Fraction, Fraction of Electrons in each Orbital, Band Center, lon Property (possible to formionic compound, ionic charge')
+    print('Added Predictors in this work: Total Atom Number, Maximum Atom Number, Minimum Atom Number, Average Atom Number, Specific Value, Atom Number Variance')
     parser = argparse.ArgumentParser()
     parser.add_argument('-i','--formula',  type=str, 
                         help="The input crystal formula.")
@@ -68,6 +72,7 @@ def main():
     result = ext_magpie.join(m)
     result = result.iloc[:,2:]
     dirs = 'Model'
+    # print(result)
     if system == 'crystal' :
         forest =  decompress_pickle(dirs+'/Crystal.pbz2')
         y_pred = forest.predict(result)
