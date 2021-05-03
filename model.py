@@ -31,7 +31,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.gaussian_process.kernels import WhiteKernel, ExpSineSquared
 
 from sklearn.metrics import f1_score, matthews_corrcoef ,make_scorer,recall_score,roc_auc_score
-from sklearn.metrics import top_k_accuracy_score
+# from sklearn.metrics import top_k_accuracy_score
 
 from sklearn.model_selection import cross_validate
 from sklearn.model_selection import train_test_split
