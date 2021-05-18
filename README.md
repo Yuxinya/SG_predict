@@ -7,7 +7,7 @@ This is a random forest machine learning model with a new feature set combined w
 
 If you find our software is useful, please cite it as:<br >
 
-#### Yuxin Li, Rongzhi Dong, Wenhui Yang, Jianjun Hu*, Crystal Systems and Space Groups Prediction of Inorganic Materials Using Machine Learning
+#### Yuxin Li, Rongzhi Dong, Wenhui Yang, Jianjun Hu*, Composition based crystal materials symmetry prediction using machine learning with enhanced descriptors
 
 Developed in 2021.4-30 at <br />
 School of Mechanical Engineering<br />
@@ -27,13 +27,14 @@ Moreover, the two previous work frameworks for space group classification are al
 Prediction performance for space groups over different crystal systems （10 fold cross validation)
 |Crystal system|data set size |   Accuracy  |     MCC     |   Precision |   Recall  |   F1 score  |
 |-------------|---------------|-------------|-------------|-------------|-----------|-------------|
-Cubic         |     17367     | 0.961±0.006 | 0.945±0.008 | 0.960±0.005 |0.961±0.006| 0.959±0.006 |
-Hexagonal     |      8201     | 0.909±0.008 | 0.888±0.010 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
-Trigonal      |      9429     | 0.824±0.012 | 0.797±0.014 | 0.823±0.013 |0.824±0.012| 0.818±0.012 |
-Tetragonal    |     12675     | 0.849±0.013 | 0.832±0.015 | 0.846±0.013 |0.849±0.013| 0.840±0.014 |
-Orthorhombic  |     22392     | 0.755±0.005 | 0.729±0.006 | 0.759±0.005 |0.755±0.005| 0.746±0.006 |
-Monoclinic    |     23024     | 0.712±0.009 | 0.647±0.011 | 0.715±0.010 |0.712±0.009| 0.703±0.010 |
 Triclinic     |      9440     | 0.835±0.013 | 0.665±0.026 | 0.835±0.013 |0.835±0.013| 0.834±0.013 |
+Monoclinic    |     23024     | 0.712±0.009 | 0.647±0.011 | 0.715±0.010 |0.712±0.009| 0.703±0.010 |
+Orthorhombic  |     22392     | 0.755±0.005 | 0.729±0.006 | 0.759±0.005 |0.755±0.005| 0.746±0.006 |
+Tetragonal    |     12675     | 0.849±0.013 | 0.832±0.015 | 0.846±0.013 |0.849±0.013| 0.840±0.014 |
+Trigonal      |      9429     | 0.824±0.012 | 0.797±0.014 | 0.823±0.013 |0.824±0.012| 0.818±0.012 |
+Hexagonal     |      8201     | 0.909±0.008 | 0.888±0.010 | 0.908±0.008 |0.909±0.008| 0.906±0.008 |
+Cubic         |     17367     | 0.961±0.006 | 0.945±0.008 | 0.960±0.005 |0.961±0.006| 0.959±0.006 |
+
 <!--- img src="performance1.png" width="800"--->
 
 ## Environment Setup
