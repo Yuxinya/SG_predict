@@ -7,7 +7,7 @@ This is a random forest machine learning model with a new feature set combined w
 
 If you find our software is useful, please cite it as:<br >
 
-#### Yuxin Li, Rongzhi Dong, Wenhui Yang, Jianjun Hu*, Composition based crystal materials symmetry prediction using machine learning with enhanced descriptors
+#### Li Y, Dong R, Yang W, et al. Composition based crystal materials symmetry prediction using machine learning with enhanced descriptors[J]. Computational Materials Science, 2021, 198: 110686.
 
 Developed in 2021.4-30 at <br />
 School of Mechanical Engineering<br />
